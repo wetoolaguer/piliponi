@@ -41,6 +41,6 @@ defmodule Piliponi.Mixfile do
     [# These are the default files included in the package
       maintainers: ["Weto Olaguer"],
       licenses: ["MIT License"],
-      links: %{"GitHub" => "https://github.com/wetoolaguer/piliponi"]
+      links: %{"GitHub" => "https://github.com/wetoolaguer/piliponi"}]
   end
 end
