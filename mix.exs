@@ -5,8 +5,8 @@ defmodule Piliponi.Mixfile do
     [app: :piliponi,
      version: "0.0.1",
      elixir: "~> 1.2",
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
+     description: description,
+     package: package,
      deps: deps]
   end
 
@@ -28,5 +28,19 @@ defmodule Piliponi.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     []
+  end
+
+
+  defp description do
+  """
+  Simple mobile phone formatter for the Philippines
+  """
+  end
+
+  defp package do
+    [# These are the default files included in the package
+      maintainers: ["Weto Olaguer"],
+      licenses: ["MIT License"],
+      links: %{"GitHub" => "https://github.com/wetoolaguer/piliponi"]
   end
 end
